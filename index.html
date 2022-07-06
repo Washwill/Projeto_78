@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Projeto 78</title>
+    </head>
+    <body>
+        Meu Álbum de Família
+        <br><br>
+        <img src="IMG_3407.jpeg" style="width: 30%;" id="ImagemDosIntegrantesDaFamilia">
+        <h4 id NomeDosIntegrantesDaFamilia></h4>
+        <button onclick="update();">Próximo</button>
+        <script>
+            var imagens = ["IMG_3407.jpeg","IMG_5028.jpeg","IMG_3395.jpeg"];
+            var nomes = ["William","Sandra","Nilton"];
+            var i = 0;
+
+
+            function update()
+            {
+                i++;
+                var NumeroDeIntegrantesDaFamiliaArray = 2
+                if(i > NumeroDeIntegrantesDaFamiliaArray )
+                {
+                    i = 0;
+                }
+                var UpdateImagens = imagens[i];
+                var UpdateNomes = nomes[i];
+                document.getElementById("ImagemDosIntegrantesDaFamilia").src = UpdateImagens;
+                document.getElementById("nomes").src = UpdateNomes;
+            }
+        </script>
+    </body>
+</html>
